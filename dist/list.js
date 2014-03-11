@@ -1196,7 +1196,7 @@ module.exports = function(list) {
             );
         };
         this.visible = function() {
-            return (item.elm.parentNode == list.list) ? true : false;
+            return (item.elm && item.elm.parentNode == list.list) ? true : false;
         };
         init(initValues, element, notCreate);
     };
